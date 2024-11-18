@@ -10,6 +10,14 @@ from starlette.requests import Request
 from starlette.responses import Response
 
 print("light on inside")
+
+async def homepage(request):
+    return JSONResponse({'hello': 'world'})
+
+
+app = Starlette(debug=True, routes=[
+    Route('/', homepage),
+])
 '''
 async def app(scope, receive, send):
     assert scope['type'] == 'http'
