@@ -10,6 +10,21 @@ from starlette.requests import Request
 from starlette.responses import Response
 
 print("light on inside")
+'''
+async def app(scope, receive, send):
+    assert scope['type'] == 'http'
+
+    await send({
+        'type': 'http.response.start',
+        'status': 200,
+        'headers': [
+            [b'content-type', b'text/plain'],
+        ],
+    })
+    await send({
+        'type': 'http.response.body',
+        'body': b'Hello, world!',
+    })
 
 
 async def app(scope, receive, send):
@@ -35,5 +50,11 @@ async def homepage(request):
     return JSONResponse({"message": "Hello World!"})
 
 
-
 app.add_routes(router)
+'''
+
+
+
+
+
+
