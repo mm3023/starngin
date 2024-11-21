@@ -2,4 +2,4 @@
 echo launching
 cd /zviroment/bin
 source activate
-which python
+cd /starngin
