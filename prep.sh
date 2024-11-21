@@ -1,4 +1,4 @@
 #!/bin/bash
 echo launching
-echo cd bin
-echo ls
+cd bin
+ls
