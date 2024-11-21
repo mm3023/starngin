@@ -2,4 +2,4 @@
 echo launching
 cd /zviroment/bin
 source activate
-ls
+which python
