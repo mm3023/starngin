@@ -18,12 +18,12 @@ async def homepage(request):
 
 
 
-app = Starlette()
-'''
+#app = Starlette()
+
 app = Starlette(debug=True, routes=[
     Route('/', homepage),
 ])
-'''
+
 '''
 async def app(scope, receive, send):
     assert scope['type'] == 'http'
