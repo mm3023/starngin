@@ -1,36 +1,11 @@
+
+os.environ['PYTHONPATH'] = '/zenviroment/bin'
 import sys
 import os
 
-os.environ['PYTHONPATH'] = '/zenviroment/bin'
-
-
-
-
-
-
-
-
-
-'''
-
-try:
-    sys.path.index('/zenviroment/bin') # Or os.getcwd() for this directory
-except ValueError:
-    sys.path.append('/zenviroment/bin')
-'''
-
-
-
-
-
-
-
-
-
-
+#os.environ['PYTHONPATH'] = '/zenviroment/bin'
 
 import starlette
-#import Starlette
 import uvicorn
 
 
