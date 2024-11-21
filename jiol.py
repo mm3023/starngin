@@ -1,9 +1,12 @@
-#fast ngin starlellte
+import sys
+import os
 
-#from fastapi import FastAPI
+os.environ['PYTHONPATH'] = '/zenviroment/bin'
+
+
 
 import sys
-import os # if you want this directory
+#import os # if you want this directory
 
 try:
     sys.path.index('/zenviroment/bin') # Or os.getcwd() for this directory
