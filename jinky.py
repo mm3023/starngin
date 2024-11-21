@@ -18,8 +18,7 @@ async def homepage(request):
 
 
 
-app = Starlette(debug=True, routes=[
-    Route('/')])
+app = Starlette()
 '''
 app = Starlette(debug=True, routes=[
     Route('/', homepage),
