@@ -1,4 +1,4 @@
 #!/bin/bash
 echo launching
-cd bin
+cd /zviroment/bin
 ls
