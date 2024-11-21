@@ -1,6 +1,33 @@
 #fast ngin starlellte
+
+#from fastapi import FastAPI
+
+import sys
+import os # if you want this directory
+
+try:
+    sys.path.index('/zenviroment/bin') # Or os.getcwd() for this directory
+except ValueError:
+    sys.path.append('/zenviroment/bin')
+
+'''
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+'''
+
+
+
+
+
+
 import starlette
-#import Starlette
+import Starlette
 import uvicorn
 
 
