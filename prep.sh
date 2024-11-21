@@ -1,0 +1,2 @@
+echo launching
+cd /bin
