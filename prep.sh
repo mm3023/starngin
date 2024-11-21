@@ -1,6 +1,6 @@
 #!/bin/bash
-echo launching
+which python3
 cd /zenviroment/bin
 source activate
-$PYTHONPATH=/zenviroment/bin
-echo $PYTHONPATH
+which python3
+
