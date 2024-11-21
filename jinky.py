@@ -16,9 +16,15 @@ async def homepage(request):
     return JSONResponse({'hello': 'world'})
 
 
+
+
+app = Starlette(debug=True, routes=[
+    Route('/')])
+'''
 app = Starlette(debug=True, routes=[
     Route('/', homepage),
 ])
+'''
 '''
 async def app(scope, receive, send):
     assert scope['type'] == 'http'
