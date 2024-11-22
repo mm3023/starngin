@@ -1,5 +1,5 @@
 
-os.environ['PYTHONPATH'] = '/zenviroment/bin'
+#os.environ['PYTHONPATH'] = '/zenviroment/bin'
 #import sys
 import os
 os.environ['PYTHONPATH'] = '/zenviroment/bin'
