@@ -1,9 +1,12 @@
 #!/bin/bash
 which python3
-source /zenviroment/bin/activate
+cd /bin
+source activate
+#source /zenviroment/bin/activate
 #source activate
+cd /zenviroment/starngin
 ls
 which python3
-#python3 jiol.py
+python3 jiol.py
 #uvicorn jiol:app --port 8080
 
