@@ -8,7 +8,7 @@ os.environ['PYTHONPATH'] = '/zenviroment/bin'
 #os.environ['PYTHONPATH'] = '/zenviroment/bin'
 print(sys.path);
 
-#import sys
+
 
 import starlette
 import uvicorn
@@ -19,6 +19,7 @@ from starlette.responses import JSONResponse
 from starlette.routing import Route, Router
 from starlette.requests import Request
 from starlette.responses import Response
+import threading
 
 print("light on inside")
 
@@ -40,9 +41,28 @@ app = Starlette(debug=True, routes=[
 
 #uvicorn.run("main:app", host="127.0.0.1", port=5000, log_level="info")
 #app = App()
-
+'''
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=5000, log_level="info")
+'''
+
+
+#app = FastAPI()
+
+config = uvicorn.Config(app=app, port=8080)
+server = uvicorn.Server(config=config)
+thread = threading.Thread(target=server.run)
+thread.start() # non-blocking call
+
+while not server.started:
+  time.sleep(0.001)
+
+print(f"HTTP server is now running on http://???:???")
+
+
+
+
+
 
 '''
 
