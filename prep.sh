@@ -1,6 +1,6 @@
 #!/bin/bash
 which python3
-cd /bin
+cd /zenviroment/bin
 source activate
 #source /zenviroment/bin/activate
 #source activate
