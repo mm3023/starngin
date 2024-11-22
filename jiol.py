@@ -1,9 +1,13 @@
 
 #os.environ['PYTHONPATH'] = '/zenviroment/bin'
+
 import sys
 import os
+print(sys.path);
 os.environ['PYTHONPATH'] = '/zenviroment/bin'
 #os.environ['PYTHONPATH'] = '/zenviroment/bin'
+print(sys.path);
+
 #import sys
 
 import starlette
